@@ -8,24 +8,24 @@
 	</head>
 	<body>
 		<header>
-		<div id="logo">
-			<img src="https://endava.service-now.com/esp/de1aa958373e420047dc2ea843990ea8.iix" alt="Endava LOGO"/>
-		</div>
-		<nav>
-			<ul>
-				<li><a href="home.html">HOME</a></li>
-				<li><a href="home.html">ABOUT</a></li>
-				<li><a href="home.html">PHOTOS</a></li>
-				<li><a href="home.html">CONTACT US</a></li>
-			</ul>
-		</nav>
+			<div id="logo">
+				<img src="https://endava.service-now.com/esp/de1aa958373e420047dc2ea843990ea8.iix" alt="Endava LOGO"/>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#info">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#photos">PHOTOS</a></li>
+					<li><a href="#footer">CONTACT US</a></li>
+				</ul>
+			</nav>
 		</header>
 
 		<section id="info" >
 			<div class="center">
 				<h1>Lorem Ipsum</h1>
-				<h3>Some descriptiontohjdiojodfijfosdifhisufhsjdosihfidhdjaoihfisdhdhlajsdodhfkdhixhsdifdkhfosihfsdihfsduifsfsdgsdoidjspjdpsakfpsjodpskdsiodospdkosjdosijdoasjf;sjiofjspdsadjasioytytrytrytr</h3>
-				<button>Read</button>
+				<h3 id="changeableContent">Some descriptiontohjdiojodfijfosdifhisufhsjdosihfidhdjaoihfisdhdhlajsdodhfkdhixhsdifdkhfosihfsdihfsduifsfsdgsdoidjspjdpsakfpsjodpskdsiodospdkosjdosijdoasjf;sjiofjspdsadjasioytytrytrytr</h3>
+				<button onclick="more()">Read</button>
 			</div>
 		</section>
 
@@ -75,7 +75,14 @@
 			</div>
 			<div style="clear:left" ></div>
 		</section>
-		<footer>
+		<script type="text/javascript">
+			var more=function(){
+				var content=document.getElementById("changeableContent");
+				content.innerHTML="This is Sparta";
+
+			}
+		</script>>
+		<footer id="footer">
 			<img src="https://g.twimg.com/Twitter_logo_blue.png" width="15px"/>
 			<img src="https://www.facebook.com/images/fb_icon_325x325.png" width="15px"/>
 			<p style="display:inline;color:white">Endava Internship</p>
