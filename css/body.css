@@ -1,4 +1,4 @@
-#info{
+#info,#photos{
 	clear:all;
 	margin-top: 6%;
 	background-color:#13C4A5;
@@ -45,8 +45,38 @@
 
 }
 
-h1 span{
+#about span{
 	color:gray;
 	background:white; 
     padding:0 10px; 
 }
+
+#photos{
+	padding: 0 25%;
+	padding-top: 10px;
+}
+
+#photos h1{
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 2px solid gray; 
+   line-height: 0.1em;
+
+}
+
+#photos span{
+	color:gray;
+	background:#13C4A5; 
+}
+
+
+#photos ul{
+	list-style: none;
+}
+
+#photos ul>li{
+	list-style: none;
+	width:166px;
+}
+
+
