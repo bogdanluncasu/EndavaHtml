@@ -60,7 +60,7 @@
    width: 100%; 
    text-align: center; 
    border-bottom: 2px solid gray; 
-   line-height: 0.1em;
+   line-height: 0px;
 
 }
 
@@ -69,14 +69,33 @@
 	background:#13C4A5; 
 }
 
-
 #photos ul{
+	padding:6%;
+	display: table;
 	list-style: none;
+
+
+}
+#photos ul li img{
+	width: 120px;
+	height: 120px;
+	float:left;
+	border: 5px solid white;
 }
 
-#photos ul>li{
-	list-style: none;
-	width:166px;
+#photos ul li{
+	width: 140px;
+	float:left;
 }
+.desc{
+	color:white;
+	font-size: 20px;
+}
+
+.content{
+	color:whitesmoke;
+}
+
+
 
 
