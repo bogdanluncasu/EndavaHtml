@@ -145,6 +145,11 @@
 	width:110%;
 	border:1px transparent gray;
 }
+
+#contact form ul li input:hover{
+	border:1px solid gray;
+}
+
 #send{
 	margin-top: 20px;
 	display: block;
@@ -172,14 +177,13 @@
 		width:80%;
 		resize:none;
 	}
+
 	#contact form ul li{
 		padding: 0%;
 		display: block;
-		float:left;
+		float:right;
 
 	}
-	footer{
-		padding: 0;
-	}
+
 }
 

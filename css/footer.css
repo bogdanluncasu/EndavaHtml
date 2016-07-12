@@ -2,9 +2,10 @@ footer{
 	background-color:#233445;
 	padding: 1% 0;
 	padding-left: 75%;
-
 }
-
+#footer_internship{
+	color:white;
+}
 @media only screen and  (max-width : 320px) {
 	footer{
 		padding-left: 0;
@@ -12,9 +13,7 @@ footer{
 	footer div:nth-child(even){
 		
 	}
-	#footer_internship{
-		color:white;
-	}
+
 
 	.footer_container{
 		text-align: center;

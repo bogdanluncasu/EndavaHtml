@@ -4,27 +4,37 @@ window.onload = function () {
 		var email=document.getElementById("email").value;
 		var phone=document.getElementById("phone").value;
 		var message=document.getElementById("message").value;
-		var regEmail=/[^@]+@[a-zA-Z0-9]+\.[a-zA-Z]+/;
-		var regPhone=/(\+)?[0-9]+/;
+		var regEmail=/^[^@]+@[a-zA-Z0-9]+\.[a-zA-Z]+$/;
+		var regPhone=/^(\+)?[0-9]+$/;
+		var regName=/^([A-Z][a-z]+ )+([A-Z][a-z]+)$/;
 //console.log(reg.test(email)+" "+(email.match(/@/g) || []).length);
-		console.log(regPhone.test(phone));
+		console.log(regName.test(name));
 		if(name.length==0){
 			alert("Please fill name box");
-		}else if(!regEmail.test(email)&&(email.match(/@/g) || []).length!=1){
-			alert("Invalid Email address");
-		}else if(!regPhone.test(phone)&&phone.length!=0){
-			alert("Invalid Number Phone");
-		}else if(message.length==0){
-			alert("Please fill message Box");
+		}else{
+				if(!regName.test(name)){
+					alert("Please, spell your name correctly");
+				}
+			 else if((!regEmail.test(email)||((email.match(/@/g) || []).length!=1))||email.length==0){
+				alert("Invalid Email address");
+			}else if(!regPhone.test(phone)&&phone.length!=0){
+				alert("Invalid Number Phone");
+			}else if(message.length==0){
+				alert("Please fill message Box");
+			}
 		}
 	});
 	var media=window.matchMedia( "(max-width: 320px)" );
 	if(media.matches) {
-	    document.getElementById("footer").insertBefore(document.getElementById("menu"),document.getElementById("firstFooterElement"));
+	    document.getElementById("footer").insertBefore(document.getElementById("menu"),
+	    	document.getElementById("firstFooterElement"));
+
+	    
 	}
 	media.addListener(function(changed) {
 	    if(changed.matches) {
-	        document.getElementById("footer").insertBefore(document.getElementById("menu"),document.getElementById("firstFooterElement"));
+	        document.getElementById("footer").insertBefore(document.getElementById("menu"),
+	        	document.getElementById("firstFooterElement"));
 	    } else {
 	        document.getElementById("header").appendChild(document.getElementById("menu"));
 	    }
