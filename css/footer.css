@@ -4,3 +4,23 @@ footer{
 	padding-left: 75%;
 
 }
+
+@media only screen and  (max-width : 320px) {
+	footer{
+		padding-left: 0;
+	}
+	footer div:nth-child(even){
+		
+	}
+	#footer_internship{
+		color:white;
+	}
+
+	.footer_container{
+		text-align: center;
+	}
+	footer>div>img{
+		margin:0 40px;
+	}
+
+}

@@ -21,3 +21,22 @@ nav>ul>li{
 	margin-right: 25%;
 	float:left;
 }
+
+@media only screen and (max-width:320px){
+	nav>ul>li{
+		float:none;
+		text-align:center;
+		text-decoration:underline;
+	}
+	nav > ul{
+		padding-left:28%;
+	}
+	nav>ul>li:after{
+		content: "";
+		display: block;
+		height: 2px;
+		width: 100%;
+		background: gray;
+	}
+	
+}

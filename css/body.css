@@ -1,3 +1,4 @@
+
 #info,#photos{
 	clear:all;
 	margin-top: 6%;
@@ -99,7 +100,7 @@
 #endava_contact{
 	padding-top: 3%;
 	color:gray;
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
 	margin-bottom: 0px;
 }
@@ -130,7 +131,7 @@
 }
 
 #contact form ul{
-	padding:0 15%;
+	 overflow:hidden;
 	list-style: none;
 	color:gray;
 }
@@ -159,5 +160,26 @@
 	resize:none;
 }
 
+@media only screen and (max-width:320px){
+	#contact form ul li input{
+		width:80%;
+	}
+	#send{
+		width:80%;
+	}
+	#message{
+		height:50px;
+		width:80%;
+		resize:none;
+	}
+	#contact form ul li{
+		padding: 0%;
+		display: block;
+		float:left;
 
+	}
+	footer{
+		padding: 0;
+	}
+}
 
