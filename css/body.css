@@ -96,7 +96,13 @@
 	color:whitesmoke;
 }
 
-
+#endava_contact{
+	padding-top: 3%;
+	color:gray;
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 0px;
+}
 
 #contact{
 	padding: 0 25%;
@@ -110,6 +116,7 @@
 	margin:0;
 	color:white;
 	line-height: 1px;
+	padding-top: 3%;
 }
 
 #contact span{
@@ -118,7 +125,39 @@
 }
 
 #contact form{
-	background-color:white;
+	text-align: justify;
+	background-color:rgb(253,253,247);
 }
+
+#contact form ul{
+	padding:0 15%;
+	list-style: none;
+	color:gray;
+}
+#contact form ul li{
+	padding: 5%;
+	display: block;
+	float:left;
+
+}
+#contact form ul li input{
+	width:110%;
+	border:1px transparent gray;
+}
+#send{
+	margin-top: 20px;
+	display: block;
+	border: 0;
+	width: 110%;
+	background-color: rgb(26,188,156);
+	color:white;
+	padding: 5px;
+
+}
+#message{
+	height:165px;
+	resize:none;
+}
+
 
 
