@@ -18,10 +18,21 @@ nav>ul>li{
 }
 #logo{
 	display: inline-block;
-	margin-right: 25%;
+	padding-right: 25%;
 	float:left;
 }
-
+@media only screen and (min-width: 320px) and (max-width:728px){
+	#logo{
+		padding-right: 0;
+	}
+	#logo img{
+		width: 80%;
+	}
+	#menu ul li a{
+		font-size: 10px;
+	}
+	
+}
 @media only screen and (max-width:320px){
 	nav>ul>li{
 		float:none;

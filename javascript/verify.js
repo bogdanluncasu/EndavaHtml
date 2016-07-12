@@ -4,7 +4,7 @@ window.onload = function () {
 		var email=document.getElementById("email").value;
 		var phone=document.getElementById("phone").value;
 		var message=document.getElementById("message").value;
-		var regEmail=/^[^@]+@[a-zA-Z0-9]+\.[a-zA-Z]+$/;
+		var regEmail=/^[a-zA-Z0-9_-]+@[a-zA-Z0-9]+\.[a-zA-Z]+$/;
 		var regPhone=/^(\+)?[0-9]+$/;
 		var regName=/^([A-Z][a-z]+ )+([A-Z][a-z]+)$/;
 //console.log(reg.test(email)+" "+(email.match(/@/g) || []).length);
@@ -15,7 +15,7 @@ window.onload = function () {
 				if(!regName.test(name)){
 					alert("Please, spell your name correctly");
 				}
-			 else if((!regEmail.test(email)||((email.match(/@/g) || []).length!=1))||email.length==0){
+			 else if(!regEmail.test(email)||email.length==0){
 				alert("Invalid Email address");
 			}else if(!regPhone.test(phone)&&phone.length!=0){
 				alert("Invalid Number Phone");
@@ -24,6 +24,16 @@ window.onload = function () {
 			}
 		}
 	});
+	var media1=window.matchMedia( "(max-width: 728px)" );
+	media1.addListener(function(changed) {
+	    if(changed.matches) {
+	       alert(728);
+	    } else {
+	    }
+	});
+
+
+
 	var media=window.matchMedia( "(max-width: 320px)" );
 	if(media.matches) {
 	    document.getElementById("footer").insertBefore(document.getElementById("menu"),

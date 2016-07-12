@@ -134,6 +134,7 @@
 	 overflow:hidden;
 	list-style: none;
 	color:gray;
+	padding-bottom: 3%;
 }
 #contact form ul li{
 	padding: 5%;
@@ -151,27 +152,45 @@
 }
 
 #send{
-	margin-top: 20px;
 	display: block;
+	font-size: 90%;
 	border: 0;
-	width: 110%;
+	width: 35%;
 	background-color: rgb(26,188,156);
 	color:white;
-	padding: 5px;
-
+	margin:0 15% 2% 13%;
 }
+
 #message{
 	height:165px;
 	resize:none;
+}
+
+@media only screen and (max-width:728px){
+	#contact form ul li input{
+		width:80%;
+	}
+
+	#message{
+		width:80%;
+		resize:none;
+	}
+
+	#contact form ul li{
+		width: 40%;
+		padding: 0%;
+		display: block;
+		float:left;
+
+	}
+
 }
 
 @media only screen and (max-width:320px){
 	#contact form ul li input{
 		width:80%;
 	}
-	#send{
-		width:80%;
-	}
+
 	#message{
 		height:50px;
 		width:80%;
@@ -181,9 +200,11 @@
 	#contact form ul li{
 		padding: 0%;
 		display: block;
-		float:right;
+		float:left;
 
 	}
 
 }
+
+
 
