@@ -32,8 +32,8 @@
 
 #about  h3{
 	color:gray;
-	padding-right: 25%;
-	padding-left: 25%;
+	padding-right: 15%;
+	padding-left: 15%;
 	word-wrap: break-word;
 	
 }
@@ -41,7 +41,7 @@
    width: 100%; 
    text-align: center; 
    border-bottom: 2px solid gray; 
-   line-height: 0.1em;
+   line-height: 1px;
 
 }
 
@@ -58,33 +58,33 @@
 
 #photos h1{
    width: 100%; 
-   text-align: center; 
    border-bottom: 2px solid gray; 
-   line-height: 0px;
+   line-height: 1px;
 
 }
 
 #photos span{
 	color:gray;
 	background:#13C4A5; 
+	padding: 0 25px;
 }
 
 #photos ul{
 	padding:6%;
-	display: table;
+	padding-left: 15%;
 	list-style: none;
-
-
 }
 #photos ul li img{
 	width: 120px;
 	height: 120px;
 	float:left;
 	border: 5px solid white;
+	margin-left: 10px;
+
 }
 
 #photos ul li{
-	width: 140px;
+	width: 160px;
 	float:left;
 }
 .desc{
@@ -97,5 +97,28 @@
 }
 
 
+
+#contact{
+	padding: 0 25%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color:rgb(232,79,64);
+}
+#contact h1{
+	width: 100%; 
+    border-bottom: 2px solid gray; 
+	margin:0;
+	color:white;
+	line-height: 1px;
+}
+
+#contact span{
+	background:rgb(232,79,64); 
+	padding: 0 25px;
+}
+
+#contact form{
+	background-color:white;
+}
 
 
